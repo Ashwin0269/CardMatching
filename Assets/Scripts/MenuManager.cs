@@ -15,7 +15,7 @@ public class MenuManager : MonoBehaviour
         // Optional: Populate dropdown dynamically
         gridDropdown.ClearOptions();
         gridDropdown.AddOptions(new System.Collections.Generic.List<string> {
-            "2x2", "3x4", "4x4", "5x2", "5x6", "6x6"
+            "2x2", "3x4", "4x4", "5x6", "6x6", "7x6", "8x8", "8x9"
         });
     }
 
