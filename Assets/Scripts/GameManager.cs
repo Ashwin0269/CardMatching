@@ -34,7 +34,8 @@ public class GameManager : MonoBehaviour
     public void CreateBoard(int rows, int cols)
     {
         LoadGame();
-        scoreText.text = $"Score: {score}";
+        scoreText.text = score.ToString();
+
         Matches.text = "0";
         Turns.text = "0";
         int totalCards = rows * cols;
@@ -125,7 +126,7 @@ public class GameManager : MonoBehaviour
         }
 
         firstCard = secondCard = null;
-        scoreText.text = $"Score: {score}";
+        scoreText.text = score.ToString() ;
         SaveGame();
 
         // Check win condition
